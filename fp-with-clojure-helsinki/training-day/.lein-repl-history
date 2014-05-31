@@ -1,0 +1,21 @@
+3 + 4 + 5 + 6
+3 "4"
++
+(get "abrakadabra" 0)
+(user/clojuredocs +)
+(user/clojuredocs min)
+(clojuredocs min)
+(clojuredocs +)
+(doc +)
+(use 'training-day)
+hai
+(average 2 5)
+(use 'training-day)
+(average 2 5)
+(reload)
+quit
+(use 'training-day)
+(average 1 2)
+(use 'training-day)
+(average 1 2)
+quit

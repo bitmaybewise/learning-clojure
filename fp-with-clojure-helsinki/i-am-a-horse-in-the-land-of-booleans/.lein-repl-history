@@ -1,0 +1,73 @@
+(average 1 2)
+(boolean 3)
+(defn mybool [n]
+  (if n true false))
+(mybool false)
+(mybool true)
+(mybool 1)
+(mybool [])
+(mybool nil)
+(mybool (+ 1 2 3 4 5))
+(= 4 4)
+(= 4 4.0)
+(== 4 4.0)
+(defn teen? [n]
+  (if (or (> n 12) (< n 20))
+(defn teen? [n]
+  (or (> n 12) (< n 20))
+)
+(teen? 12)
+(teen? 13)
+(teen? 11)
+(teen? 9)
+(defn teen? [n]
+  (= true (> n 12) (< n 20)))
+(teen? 10)
+(teen? 12)
+(teen? 13)
+(teen? 15)
+(teen? 20)
+(teen? 19)
+(teen? 19 13 15)
+(defn abs [n]
+  (if n > 0
+     n
+     (-n)))
+(defn abs [n]
+  if (> n 0)
+(defn abs [n]
+  (if (> n 0)
+     n
+     (-n)))
+(defn abs [n]
+  (if (> n 0)
+     n
+     (- n)))
+(abs 0)
+(abs 1)
+(abs -1)
+(defn fizzbuzz [n]
+  (cond
+    (== (mod n 15) 0) "gotcha!"
+    (== (mod n 5) 0) "buzz"
+    (== (mod n 3) 0) "fizz"
+    :else ""))
+(fizzbuzz 10)
+(fizzbuzz 6)
+(fizzbuzz 15)
+(fizzbuzz 60)
+(fizzbuzz 6)
+(fizzbuzz 1)
+quit
+(use 'midje.repl)
+midje
+(midje)
+(autotest)
+(test)
+(midje.run)
+(midje)
+quit
+(def v [1 2])
+(count v)
+(* (count v) 2)
+quit
